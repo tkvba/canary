@@ -6,6 +6,7 @@ steps:
   image: python
   commands:
   - echo "inside container"
+  
 - name: push
   image: plugins/docker
   settings:
