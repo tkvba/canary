@@ -15,7 +15,7 @@ steps:
 - name: push
   image: plugins/docker
   settings:
-    username: tkvba
+    username: sndjnky
     password: 
       from_secret: p_docker
     repo: sndjnky/tk
