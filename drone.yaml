@@ -7,7 +7,7 @@ steps:
   commands:
   - echo "inside container"
   
-- name: push
+- name: publish
   image: plugins/docker
   settings:
     username: sndjnky
@@ -18,4 +18,4 @@ steps:
     - auto_tag: true
   when:
     event:
-    - custom
+    - push
