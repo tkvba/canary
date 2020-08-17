@@ -12,7 +12,7 @@ steps:
     - pull_request
     - push
 
-- name: publish
+- name: push
   image: plugins/docker
   settings:
     username: sndjnky
