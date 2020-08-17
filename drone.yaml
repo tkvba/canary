@@ -1,0 +1,27 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build
+  image: plugins/docker
+  settings:
+    dry_run: false
+    repo: sndjnky/canary
+  when:
+    event:
+    - pull_request
+    - push
+
+- name: push
+  image: plugins/docker
+  settings:
+    username: tkvba
+    password: 
+      from_secret: u_docker
+    repo: sndjnky/canary
+    tag:
+    - canary_v1
+    - ${DOCKER_TAG}
+  when:
+    event:
+    - custom
