@@ -20,8 +20,7 @@ steps:
       from_secret: p_docker
     repo: sndjnky/tk
     tag:
-    - canary_v1
-    - ${DOCKER_TAG}
+    - canary_v4
   when:
     event:
     - custom
