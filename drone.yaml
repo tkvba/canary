@@ -18,7 +18,7 @@ steps:
     username: sndjnky
     password: 
       from_secret: p_docker
-    repo: https://hub.docker.com/repository/docker/sndjnky/tk
+    repo: sndjnky/tk
     tag:
     - canary_v1
     - ${DOCKER_TAG}
