@@ -6,7 +6,7 @@ steps:
   image: plugins/docker
   settings:
     dry_run: false
-    repo: sndjnky/canary
+    repo: sndjnky/tk
   when:
     event:
     - pull_request
