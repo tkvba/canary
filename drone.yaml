@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: build
-  image: nginx:latest
+  image: python
   settings:
     dry_run: false
     repo: sndjnky/tk
@@ -12,7 +12,7 @@ steps:
     - pull_request
     - push
 
-- name: push
+- name: publish
   image: plugins/docker
   settings:
     username: sndjnky
@@ -20,7 +20,7 @@ steps:
       from_secret: p_docker
     repo: sndjnky/tk
     tag:
-    - canary_v4
+    - auto_tag: true
   when:
     event:
     - custom
