@@ -14,7 +14,8 @@ steps:
     password: 
       from_secret: p_docker
     repo: sndjnky/tk
-    auto_tag: true
+    tag:
+    - canary_v5
   when:
     event:
     - push
