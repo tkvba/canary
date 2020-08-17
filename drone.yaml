@@ -11,6 +11,7 @@ steps:
     event:
     - pull_request
     - push
+    - commit
 
 - name: push
   image: plugins/docker
