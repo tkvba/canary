@@ -4,15 +4,8 @@ name: default
 steps:
 - name: build
   image: python
-  settings:
-    dry_run: false
-    repo: sndjnky/tk
-  when:
-    event:
-    - pull_request
-    - push
-    - commit
-
+  commands:
+  - pip install -r requirements.txt
 - name: push
   image: plugins/docker
   settings:
