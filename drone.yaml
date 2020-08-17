@@ -17,8 +17,8 @@ steps:
   settings:
     username: tkvba
     password: 
-      from_secret: u_docker
-    repo: sndjnky/canary
+      from_secret: p_docker
+    repo: sndjnky/tk
     tag:
     - canary_v1
     - ${DOCKER_TAG}
