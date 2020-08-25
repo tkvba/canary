@@ -15,7 +15,7 @@ steps:
       from_secret: p_docker
     repo: sndjnky/tk
     tag:
-    - canary_v10
+    - canary_v11
   when:
     event:
     - push
