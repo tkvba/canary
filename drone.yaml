@@ -8,13 +8,12 @@ steps:
   - echo "inside container"
   
 - name: publish
-  image: plugins/ecr
+  image: plugins/docker
   settings:
-    access_key: AKIA3B4U6ZRO63IEEKZB
+    username: sndjnky
     password: 
-      from_secret: p_aws
-    repo: tkrepo
-    registry: 759984737373.dkr.ecr.us-west-2.amazonaws.com/tkrepo
+      from_secret: p_docker
+    repo: sndjnky/tk
     tag:
     - canary_v15
   when:
