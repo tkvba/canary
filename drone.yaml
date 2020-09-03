@@ -17,7 +17,7 @@ steps:
     registry: 759984737373.dkr.ecr.us-west-2.amazonaws.com
     region: us-west-2
     tag:
-    - canary_v17
+    - canary_v${DRONE_TAG}
   when:
     event:
     - push
