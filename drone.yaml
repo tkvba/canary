@@ -16,7 +16,7 @@ steps:
     repo: tkrepo
     registry: 759984737373.dkr.ecr.us-west-2.amazonaws.com
     tag:
-    - canary_v15
+    - canary_v16
   when:
     event:
     - push
