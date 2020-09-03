@@ -3,24 +3,18 @@ name: default
 
 steps:
 - name: build
-  image: plugins/docker
-  settings:
-    username: sndjnky
-    password: 
-      from_secret: p_docker
-    repo: sndjnky/tk
-    tag:
-    - canary_v1
+  image: nginx
   commands:
   - echo "inside container"
   
 - name: publish
-  image: plugins/docker
+  image: plugins/ecr
   settings:
-    username: sndjnky
+    access_key: AKIA3B4U6ZRO63IEEKZB
     password: 
-      from_secret: p_docker
-    repo: sndjnky/tk
+      from_secret: p_aws
+    repo: tkrepo
+    registry: 759984737373.dkr.ecr.us-west-2.amazonaws.com/tkrepo
     tag:
     - canary_v14
   when:
