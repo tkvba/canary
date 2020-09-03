@@ -11,8 +11,7 @@ steps:
   image: plugins/ecr
   settings:
     access_key: AKIA3B4U6ZRO63IEEKZB
-    secret_key: 
-      from_secret: p_aws
+    secret_key: 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
     repo: tkrepo
     registry: 759984737373.dkr.ecr.us-west-2.amazonaws.com
     tag:
