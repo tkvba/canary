@@ -8,10 +8,10 @@ steps:
   - echo "inside container"
   
 - name: publish
-  image: plugins/docker
+  image: plugins/ecr
   settings:
-    acceess_key: AKIA3B4U6ZRO63IEEKZB
-    password: 
+    access_key: AKIA3B4U6ZRO63IEEKZB
+    secret_key: 
       from_secret: p_aws
     repo: tkrepo
     registry: 759984737373.dkr.ecr.us-west-2.amazonaws.com
