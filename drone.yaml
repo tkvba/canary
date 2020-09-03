@@ -15,6 +15,7 @@ steps:
       from_secret: p_aws
     repo: tkrepo
     registry: 759984737373.dkr.ecr.us-west-2.amazonaws.com
+    region: us-west-2
     tag:
     - canary_v16
   when:
